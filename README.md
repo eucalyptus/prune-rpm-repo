@@ -22,7 +22,7 @@ Options
 
 ``--config``
   location of a configuration file with the retention policy to use
-  (see [CONFIGURATION](README.rst/#configuration))
+  (see [CONFIGURATION](README.md/#configuration))
 
 ``--debug``
   show retention policy matches and other debugging information
@@ -41,7 +41,7 @@ based on their modification times, as reported by stat(2), or by how many
 versions of packages with the same name exist in the repository at once.
 This is best illustrated with an example:
 
-```yml
+```yaml
 preserve:
   - pattern: .*-image$
     min-versions: 5
