@@ -1,4 +1,3 @@
-==============
 prune-rpm-repo
 ==============
 
@@ -8,7 +7,7 @@ more than a certain number of versions exist.  A retention policy in a
 configuration file controls exactly how long each package is preserved.
 
 SYNOPSIS
-========
+--------
 
 ``prune-rpm-repo [-nv] [--config FILE] [--debug] DIR ...``
 
@@ -17,8 +16,7 @@ It will consider them all at once, not independently -- running it
 separately on several directories may preserve more than running it on
 all of those directories at once.
 
-Options
--------
+### Options ###
 
 ``--config``
   location of a configuration file with the retention policy to use
@@ -34,7 +32,7 @@ Options
   list the files that are deleted
 
 CONFIGURATION
-=============
+-------------
 
 Configuration files control which packages prune-rpm-repo preserves
 based on their modification times, as reported by stat(2), or by how many
@@ -70,21 +68,21 @@ This typically amounts to a rule that preserves all packages not matched
 by another rule.
 
 INSTALLATION
-============
+------------
 
 This project's code consists of a single file that does not require
 installation.  It does, however, require PyYAML, which is available from
 PyPI and many distributions by that name, and other distributions as
-"python-yaml".
+``python-yaml``.
 
 CONTRIBUTING & BUGS
-===================
+-------------------
 
 This project's source code can be found on GitHub at
 http://github.com/eucalyptus/prune-rpm-repo/.  To obtain a copy of the
 source code use the following command:
 
-    ``git clone git://github.com/eucalyptus/prune-rpm-repo``
+    git clone git://github.com/eucalyptus/prune-rpm-repo
 
 You can also file bugs or pull requests for the project on GitHub.
 Please note that by submitting code to this project, you agree that code
