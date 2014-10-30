@@ -34,12 +34,12 @@ all of those directories at once.
 CONFIGURATION
 -------------
 
-Configuration files control which packages prune-rpm-repo preserves
-based on their modification times, as reported by stat(2), or by how many
+Configuration files control which packages prune-rpm-repo preserves based
+on their modification times, as reported by ``stat(2)``, or by how many
 versions of packages with the same name exist in the repository at once.
 This is best illustrated with an example:
 
-```yaml
+```YAML
 preserve:
   - pattern: .*-image$
     min-versions: 5
