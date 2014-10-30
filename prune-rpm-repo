@@ -191,7 +191,7 @@ def main():
         usage='%prog [-nv] [--config FILE] [--debug] DIR ...')
     parser.add_option('--config', metavar='FILE',
                       help='configuration file')
-    parser.add_option('-n', action='store_true',
+    parser.add_option('-n', '--pretend', action='store_true',
                       help="don't actually remove packages.  Implies -v."),
     parser.add_option('-v', '--verbose', action='store_true',
                       help='list the files that are deleted'),
